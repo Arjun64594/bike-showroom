@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARJUN BIKE WORLD | Ride Your Dream</title>
+  <meta name="description" content="ARJUN BIKE WORLD in Chennai offers premium sports, cruiser, electric bikes and scooters. Book a test ride, explore collections, and ride your dream." />
+  <meta property="og:title" content="ARJUN BIKE WORLD | Ride Your Dream" />
+  <meta property="og:description" content="Premium bike showroom in Chennai for sports, cruiser, electric and commuter bikes." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-theme="dark">
+  <!-- Page Loader -->
+  <div id="page-loader" class="page-loader d-flex align-items-center justify-content-center">
+    <div class="loader-inner text-center">
+      <div class="loader-logo mb-3">ARJUN<span>BIKE</span>WORLD</div>
+      <div class="spinner-border text-danger" role="status"></div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919876543210?text=Hi%20ARJUN%20BIKE%20WORLD%2C%20I%20want%20to%20know%20more%20about%20bikes." 
+     class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Navbar -->
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3 fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+          <span class="text-danger">ARJUN</span> BIKE WORLD
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-links">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="bikes.html">Bikes</a></li>
+            <li class="nav-item"><a class="nav-link" href="emi.html">EMI Calculator</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+          <div class="d-flex align-items-center ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light me-2" type="button">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+            <a href="admin/index.html" class="btn btn-sm btn-danger">Admin</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+      <div class="hero-media">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/video/hero-bike.mp4" type="video/mp4" />
+          <!-- Fallback image if video fails -->
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-content reveal">
+              <p class="text-uppercase text-danger fw-semibold mb-2">Chennai, Tamil Nadu</p>
+              <h1 class="display-4 fw-bold mb-3">
+                Ride Your <span class="text-danger">Dream</span>
+              </h1>
+              <p class="lead text-light-50 mb-4">
+                ARJUN BIKE WORLD brings you the latest sports, cruiser, electric and commuter bikes, curated for Chennai’s youth, enthusiasts and daily riders.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="bikes.html#test-ride" class="btn btn-danger btn-lg px-4">
+                  Book Test Ride
+                </a>
+                <a href="bikes.html" class="btn btn-outline-light btn-lg px-4">
+                  View Bikes
+                </a>
+              </div>
+              <div class="hero-meta d-flex flex-wrap gap-4 mt-4">
+                <div>
+                  <p class="small text-uppercase text-light-50 mb-1">Location</p>
+                  <p class="mb-0 fw-semibold">Chennai, Tamil Nadu</p>
+                </div>
+                <div>
+                  <p class="small text-uppercase text-light-50 mb-1">Contact</p>
+                  <p class="mb-0 fw-semibold">+91 98765 43210</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Bikes -->
+    <section class="section-padding bg-dark-900" id="featured-bikes">
+      <div class="container">
+        <div class="section-header reveal d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <p class="section-kicker text-danger text-uppercase fw-semibold mb-1">Featured Bikes</p>
+            <h2 class="section-title mb-0">Handpicked for Chennai Streets</h2>
+          </div>
+          <a href="bikes.html" class="link-light text-decoration-none">
+            View full collection <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <div id="featuredBikesContainer" class="row g-4">
+          <!-- Populated by JS from bikes dataset -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section-padding bg-black" id="categories">
+      <div class="container">
+        <div class="text-center mb-4 reveal">
+          <p class="section-kicker text-danger text-uppercase fw-semibold mb-1">Categories</p>
+          <h2 class="section-title mb-2">Find Your Riding Style</h2>
+          <p class="text-light-50 mb-0">From aggressive sports machines to comfortable cruisers and efficient commuters.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <a href="bikes.html?category=sports" class="category-card reveal">
+              <div class="category-icon"><i class="bi bi-speedometer2"></i></div>
+              <h3>Sports</h3>
+              <p>High performance machines for pure thrill.</p>
+            </a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="bikes.html?category=cruiser" class="category-card reveal">
+              <div class="category-icon"><i class="bi bi-signpost-2"></i></div>
+              <h3>Cruiser</h3>
+              <p>Relaxed ergonomics for long open roads.</p>
+            </a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="bikes.html?category=electric" class="category-card reveal">
+              <div class="category-icon"><i classi="bi bi-lightning-charge"></i></div>
+              <h3>Electric</h3>
+              <p>Clean, quiet and efficient city riding.</p>
+            </a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="bikes.html?category=scooter" class="category-card reveal">
+              <div class="category-icon"><i class="bi bi-bicycle"></i></div>
+              <h3>Scooter</h3>
+              <p>Practical daily rides for your routine.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-dark-900" id="why-us">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5 reveal">
+            <p class="section-kicker text-danger text-uppercase fw-semibold mb-1">Why Choose Us</p>
+            <h2 class="section-title mb-3">Premium experience. Local trust.</h2>
+            <p class="text-light-50 mb-3">
+              At ARJUN BIKE WORLD, every bike is curated with passion. Our Chennai showroom blends premium sports ambience with genuine guidance for riders of every kind.
+            </p>
+            <ul class="list-unstyled text-light-50">
+              <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> Authorized multi-brand showroom</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> Transparent on-road pricing & finance</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-danger me-2"></i> Expert team of riding enthusiasts</li>
+              <li><i class="bi bi-check-circle text-danger me-2"></i> Priority test rides & quick delivery</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 reveal">
+            <div class="why-grid">
+              <div class="why-card">
+                <i class="bi bi-graph-up-arrow"></i>
+                <h3>Best Deals</h3>
+                <p>Exclusive launch offers and seasonal promotions tailored for Chennai riders.</p>
+              </div>
+              <div class="why-card">
+                <i class="bi bi-shield-lock"></i>
+                <h3>Trusted Finance</h3>
+                <p>Partnered with leading banks for easy EMI options and quick approvals.</p>
+              </div>
+              <div class="why-card">
+                <i class="bi bi-gear-wide-connected"></i>
+                <h3>After-Sales Care</h3>
+                <p>Service guidance, accessories recommendations and riding tips for every owner.</p>
+              </div>
+              <div class="why-card">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Prime Location</h3>
+                <p>Easy access from all parts of Chennai with ample parking space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-black" id="testimonials">
+      <div class="container">
+        <div class="text-center mb-4 reveal">
+          <p class="section-kicker text-danger text-uppercase fw-semibold mb-1">Testimonials</p>
+          <h2 class="section-title mb-2">Riders of ARJUN BIKE WORLD</h2>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card mx-auto">
+                <p class="testimonial-text">
+                  “Smooth booking experience and the staff helped me choose the right sports bike for my office commute and weekend rides.”
+                </p>
+                <div class="testimonial-meta">
+                  <h3>Rahul S</h3>
+                  <p class="mb-1">Chennai</p>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card mx-auto">
+                <p class="testimonial-text">
+                  “Great collection of scooters and mileage bikes. The team explained EMI options clearly which made the purchase stress-free.”
+                </p>
+                <div class="testimonial-meta">
+                  <h3>Priya K</h3>
+                  <p class="mb-1">Tambaram</p>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card mx-auto">
+                <p class="testimonial-text">
+                  “Loved the premium showroom vibe. Test rides were arranged quickly and delivery was on time with all accessories fitted.”
+                </p>
+                <div class="testimonial-meta">
+                  <h3>Aravind M</h3>
+                  <p class="mb-1">Velachery</p>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Offers -->
+    <section class="section-padding bg-gradient-offer" id="offers">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8 reveal">
+            <h2 class="section-title mb-2">Latest Offers for Chennai Riders</h2>
+            <p class="text-light-75 mb-1">
+              Up to <span class="fw-bold text-white">₹15,000* off</span> on select sports bikes. Special EMI plans starting at <span class="fw-bold text-white">₹2,999/month*</span>.
+            </p>
+            <p class="small text-light-50 mb-3">*T&amp;C apply. Limited period offer.</p>
+            <a href="bikes.html" class="btn btn-light btn-lg">
+              Explore Offer Bikes
+            </a>
+          </div>
+          <div class="col-lg-4 text-lg-end text-center reveal">
+            <div class="offer-badge">
+              <span>Festive</span> Sale
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section-padding bg-dark-900" id="newsletter">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 reveal">
+            <h2 class="section-title mb-2">Stay ahead of every launch</h2>
+            <p class="text-light-50 mb-0">
+              Subscribe for new model launches, finance offers and exclusive ARJUN BIKE WORLD events in Chennai.
+            </p>
+          </div>
+          <div class="col-lg-6 reveal">
+            <form id="newsletterForm" class="newsletter-form d-flex flex-column flex-md-row gap-3">
+              <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email" required />
+              <button type="submit" class="btn btn-danger flex-shrink-0">Subscribe</button>
+            </form>
+            <div id="newsletterFeedback" class="form-feedback small mt-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer bg-black pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="text-uppercase fw-bold mb-3"><span class="text-danger">ARJUN</span> BIKE WORLD</h5>
+          <p class="text-light-50">
+            Ride Your Dream with Chennai’s premium multi-brand bike showroom for sports, cruiser, electric and commuter motorcycles.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold mb-3">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="bikes.html">Bikes Collection</a></li>
+            <li><a href="emi.html">EMI Calculator</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold mb-3">Contact</h6>
+          <p class="mb-1 text-light-50">Chennai, Tamil Nadu</p>
+          <p class="mb-1 text-light-50">Phone: +91 98765 43210</p>
+          <p class="mb-0 text-light-50">Email: info@arjunbikeworld.com</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-semibold mb-3">Follow</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-dark-700 my-4" />
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-light-50">
+        <p class="mb-1 mb-md-0">&copy; <span id="currentYear"></span> ARJUN BIKE WORLD. All rights reserved.</p>
+        <p class="mb-0">Designed for performance &amp; style.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS + Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- App Scripts -->
+  <script src="assets/js/bikes-data.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/validators.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
